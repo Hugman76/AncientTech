@@ -1,0 +1,8 @@
+{
+  "modmenu.descriptionTranslation.MODID": "DESCRIPTION",
+
+  "block.MODID.example_block": "Example Block",
+
+  "text.autoconfig.MODID.title": "MODID's config",
+  "text.autoconfig.MODID.option.items_per_click": "Items per click"
+}
