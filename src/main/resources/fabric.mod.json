@@ -25,7 +25,6 @@
     ]
   },
   "depends": {
-    "dawn": ">=3.3.0"
     "minecraft": ">=1.19",
     "fabric": "*"
   },
