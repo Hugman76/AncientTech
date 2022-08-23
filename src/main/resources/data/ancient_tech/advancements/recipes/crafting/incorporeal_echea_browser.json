@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "ancient_tech:crafting/incorporeal_echea_browser"
+    ]
+  },
+  "criteria": {
+    "has_bedrock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:bedrock"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "ancient_tech:crafting/incorporeal_echea_browser"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bedrock",
+      "has_the_recipe"
+    ]
+  ]
+}

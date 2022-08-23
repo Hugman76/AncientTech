@@ -15,19 +15,19 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "org.example.MODID.MODCLASS"
+      "fr.hugman.ancient_tech.AncientTech"
     ],
     "client": [
-      "org.example.MODID.MODCLASSClient"
+      "fr.hugman.ancient_tech.AncientTechClient"
     ],
-    "modmenu": [
-      "org.example.MODID.config.MODCLASSModMenuIntegration"
+    "cardinal-components": [
+      "fr.hugman.ancient_tech.AncientTechComponents"
     ]
   },
   "depends": {
-    "minecraft": ">=1.18.2",
-    "fabric": "*",
     "dawn": ">=3.3.0"
+    "minecraft": ">=1.19",
+    "fabric": "*"
   },
   "suggests": {
   },
@@ -40,9 +40,12 @@
         "modmenu.modrinth": "https://modrinth.com/mod/${modrinth_slug}",
         "modmenu.github_releases": "https://github.com/DawnTeamMC/${github_name}/releases/",
         "modmenu.crowdin": "https://crowdin.com/project/dawnteam",
-        "modmenu.wiki": "https://github.com/DawnTeamMC/${github_name}/wiki/"
+        "modmenu.wiki": "https://hugman.gitbook.io/ancient-tech/"
       }
-    }
+    },
+    "cardinal-components": [
+      "ancient_tech:incorporeal_echea"
+    ]
   },
   "license": "LGPL v3.0"
 }

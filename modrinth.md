@@ -1,31 +1,31 @@
-[![MODNAME](https://dawnteammc.github.io/MODID/images/header.png)](https://dawnteammc.github.io/MODID)
+[![Ancient Tech](https://dawnteammc.github.io/ancient_tech/images/header.png)](https://dawnteammc.github.io/ancient_tech)
 
 [![Discord user count](https://img.shields.io/discord/504608980799062036?label=&color=424549&labelColor=7289da&style=for-the-badge&logo=Discord&logoColor=DDE4EF)](https://discord.gg/8ksTVJu)
 [![Twitter followers](https://img.shields.io/twitter/follow/DawnTeamMC?label=&color=424549&labelColor=1DA1F2&style=for-the-badge&logo=Twitter&logoColor=DDE4EF)](https://twitter.com/DawnTeamMC)
 
-MODNAME is a mod for the latest version of Minecraft that WIP.
+Ancient Tech is a mod for the latest version of Minecraft that WIP.
 
-**You can visit the [official website for MODNAME for more information](https://dawnteammc.github.io/MODID).**
+**You can visit the [official website for Ancient Tech for more information](https://dawnteammc.github.io/ancient_tech).**
 
 ## 👾 Features
 WIP
 
 ## 📦 Download
 ### Required mods
-⚠ MODNAME **needs** the following mods to be installed:
+⚠ Ancient Tech **needs** the following mods to be installed:
 
 - Fabric API: [GitHub](https://github.com/FabricMC/fabric) / [CurseForge](https://www.curseforge.com/minecraft/mc-mods/fabric-api) / [Modrinth](https://modrinth.com/mod/fabric-api)
 - Dawn API: [GitHub](https://github.com/DawnTeamMC/DawnAPI) / [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dawn) / [Modrinth](https://modrinth.com/mod/dawn)
 
 ### Compatible mods
-MODNAME is compatible with the following mods:
+Ancient Tech is compatible with the following mods:
 
 WIP
 
 ## ❤️ Support
 [![Patreon supporters](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3DHugman%26type%3Dpatrons&style=flat-square)](https://patreon.com/Hugman)
 
-You can support MODNAME on the [Patreon page of the founder, main developer and maintainer of the Dawn Team mods (Hugman)](https://patreon.com/Hugman).
+You can support Ancient Tech on the [Patreon page of the founder, main developer and maintainer of the Dawn Team mods (Hugman)](https://patreon.com/Hugman).
 
 By supporting Hugman, you can get access to the following:
 

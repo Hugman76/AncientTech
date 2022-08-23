@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-        Before continuing, you must be sure to be running on the LATEST version of MODNAME. Otherwise, you have to try to reproduce the bug on the latest version of MODNAME.
+        Before continuing, you must be sure to be running on the LATEST version of Ancient Tech. Otherwise, you have to try to reproduce the bug on the latest version of Ancient Tech.
   - type: textarea
     id: what-happened
     attributes:
