@@ -1,7 +1,5 @@
-package fr.hugman.ancient_tech.block;
+package fr.hugman.ancient_tech.echea;
 
-import fr.hugman.ancient_tech.AncientTech;
-import fr.hugman.ancient_tech.echea.IncorporealEchea;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -24,6 +22,8 @@ public class IncorporealEcheaBrowserBlock extends Block {
 	@Override
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
 		// TODO: open GUI
+
+		// TEMPORARY BEHAVIOUR
 		if(!world.isClient()) {
 			var echea = IncorporealEchea.get(world);
 			var stack = player.getStackInHand(hand);

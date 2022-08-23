@@ -1,6 +1,6 @@
 package fr.hugman.ancient_tech;
 
-import fr.hugman.ancient_tech.block.IncorporealEcheaBrowserBlock;
+import fr.hugman.ancient_tech.echea.IncorporealEcheaBrowserBlock;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
