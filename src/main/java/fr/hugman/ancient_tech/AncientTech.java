@@ -1,7 +1,9 @@
 package fr.hugman.ancient_tech;
 
-import fr.hugman.ancient_tech.echea.IncorporealEcheaBrowserBlock;
+import fr.hugman.ancient_tech.block.IncorporealEcheaBrowserBlock;
+import fr.hugman.ancient_tech.command.EcheaCommand;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -21,7 +23,7 @@ public class AncientTech implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> EcheaCommand.register(dispatcher));
 	}
 
 	public static Identifier id(String name) {

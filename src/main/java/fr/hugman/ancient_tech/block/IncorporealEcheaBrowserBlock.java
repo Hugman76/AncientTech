@@ -1,7 +1,9 @@
-package fr.hugman.ancient_tech.echea;
+package fr.hugman.ancient_tech.block;
 
+import fr.hugman.ancient_tech.echea.IncorporealEchea;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.EnderChestBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -30,16 +32,14 @@ public class IncorporealEcheaBrowserBlock extends Block {
 
 			// Full hand interaction
 			if(!stack.isEmpty()) {
-				echea.content().add(player.getStackInHand(hand));
+				echea.add(player.getStackInHand(hand));
 				player.setStackInHand(hand, ItemStack.EMPTY);
 			}
 
 			// Empty hand interaction
 			else {
 				if(!echea.content().isEmpty()) {
-					var firstStack = echea.content().get(echea.content().size() - 1);
-					echea.content().remove(firstStack);
-					player.setStackInHand(hand, firstStack);
+					player.setStackInHand(hand, echea.fullPick(echea.content().size() - 1));
 				}
 			}
 		}
