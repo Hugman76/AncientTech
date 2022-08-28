@@ -18,8 +18,8 @@ public final class UncappedStackHelper {
 			var item = (Item) Registry.ITEM.get(new Identifier(nbt.getString(ID_KEY)));
 			var count = nbt.getInt(COUNT_KEY);
 			var stack = new ItemStack(item, count);
-			if(nbt.contains("tag", NbtElement.COMPOUND_TYPE)) {
-				stack.setNbt(nbt.getCompound("tag"));
+			if(nbt.contains(TAG_KEY, NbtElement.COMPOUND_TYPE)) {
+				stack.setNbt(nbt.getCompound(TAG_KEY));
 			}
 			return stack;
 		} catch(RuntimeException var2) {

@@ -11,6 +11,6 @@ public class AncientTechComponents implements LevelComponentInitializer {
 
 	@Override
 	public void registerLevelComponentFactories(LevelComponentFactoryRegistry registry) {
-		registry.register(INCORPOREAL_ECHEA, IncorporealEchea::new);
+		registry.register(INCORPOREAL_ECHEA, wp -> new IncorporealEchea());
 	}
 }

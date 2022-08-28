@@ -7,22 +7,22 @@ apply from: 'https://dawnteammc.github.io/resources/gradle_scripts/fabric-publis
 apply from: 'https://dawnteammc.github.io/resources/gradle_scripts/fabric-translate.gradle'
 
 repositories {
-    maven { url 'https://jitpack.io' }                          // Required for Dawn API
+    maven { url 'https://jitpack.io' }                                // Required for Dawn API
 
-    maven { url 'https://maven.shedaniel.me/' }                 // Required for Cloth Config
-    maven { url 'https://maven.terraformersmc.com/' }           // Required for Mod Menu
-    maven { url 'https://maven.ryanliptak.com/' }               // Required for AppleSkin
+    maven { url 'https://maven.shedaniel.me/' }                       // Required for Cloth Config
+    maven { url 'https://maven.terraformersmc.com/' }                 // Required for Mod Menu
+    maven { url 'https://maven.ryanliptak.com/' }                     // Required for AppleSkin
 
-    maven { url 'https://ladysnake.jfrog.io/artifactory/mods' } // Required for Cardinal Components
+    maven { url 'https://ladysnake.jfrog.io/artifactory/mods' }       // Required for Cardinal Components
+    maven { url 'https://server.bbkr.space/artifactory/libs-release'} // Required for LibGui
 }
 
 dependencies {
     modApi "com.github.DawnTeamMC:DawnAPI:1.19-SNAPSHOT"
 
-    modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cardinal_version}"
-    include           "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cardinal_version}"
-    modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-level:${cardinal_version}"
-    include           "dev.onyxstudios.cardinal-components-api:cardinal-components-level:${cardinal_version}"
+    modImplementation include ("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cardinal_version}")
+    modImplementation include ("dev.onyxstudios.cardinal-components-api:cardinal-components-level:${cardinal_version}")
+    modImplementation include ("io.github.cottonmc:LibGui:${libgui_version}")
 
     compileOnly "com.google.code.findbugs:jsr305:3.0.2"
 }
