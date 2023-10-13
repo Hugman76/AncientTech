@@ -23,7 +23,7 @@ public class EcheaCommand {
 			return 1;
 		}
 		var text = Text.literal("The incorporeal echea contains:");
-		for(var stack : echea) {
+		for(var stack : echea.content()) {
 			text = text.append("\n").append(stack.getCount() + "x ").append(stack.getName());
 		}
 		source.sendFeedback(text, false);

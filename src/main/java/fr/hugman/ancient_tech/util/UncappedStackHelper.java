@@ -16,7 +16,7 @@ public final class UncappedStackHelper {
 	public static ItemStack fromNbt(NbtCompound nbt) {
 		try {
 			var item = (Item) Registry.ITEM.get(new Identifier(nbt.getString(ID_KEY)));
-			var count = nbt.getInt(COUNT_KEY);
+			int count = nbt.getInt(COUNT_KEY);
 			var stack = new ItemStack(item, count);
 			if(nbt.contains(TAG_KEY, NbtElement.COMPOUND_TYPE)) {
 				stack.setNbt(nbt.getCompound(TAG_KEY));
@@ -30,8 +30,8 @@ public final class UncappedStackHelper {
 
 	public static NbtCompound toNbt(ItemStack stack) {
 		var nbt = new NbtCompound();
-		Identifier identifier = Registry.ITEM.getId(stack.getItem());
-		nbt.putString(ID_KEY, identifier.toString());
+		Identifier id = Registry.ITEM.getId(stack.getItem());
+		nbt.putString(ID_KEY, id.toString());
 		nbt.putInt(COUNT_KEY, stack.getCount());
 		if(stack.getNbt() != null) {
 			nbt.put(TAG_KEY, stack.getNbt().copy());
